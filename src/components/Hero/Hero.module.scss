@@ -1,0 +1,38 @@
+.heroWrapper {
+    position: relative;
+    height: 50vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.7)
+      ), url('../assets/img/rugby_academy_hero_dummy2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 75px 16px 16px 16px;
+
+    .heroTitle {
+        color: var(--primary-color-light);
+    }
+
+    .heroSubtitles {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: absolute;
+        bottom: 16px;
+        
+        .heroSubtitleRed, .heroSubtitleWhite {
+            padding: 4px;
+            margin: 0;
+        }
+        
+        .heroSubtitleRed {
+            background: red;
+            color: var(--primary-color-light);
+        }
+        .heroSubtitleWhite {
+            background: var(--primary-background-light);
+            color: var(--primary-color-dark);
+        }
+    }
+}
