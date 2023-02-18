@@ -1,3 +1,8 @@
+# vfr_academy
+Project to create a website which enables vfr to organize rugby classes 
+
+---------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
