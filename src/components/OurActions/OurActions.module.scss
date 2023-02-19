@@ -1,0 +1,14 @@
+.actionHeadline {
+    text-align: center;
+}
+
+.cardsWrapper {
+    padding: 20px;
+    
+    .cards {
+        display: flex;
+        gap: 16px;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}

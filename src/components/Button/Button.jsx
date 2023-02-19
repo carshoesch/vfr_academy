@@ -1,8 +1,17 @@
 import React from 'react'
+import styles from './Button.module.scss'
 
-const Button = ({ text }) => {
+const Button = ({ text, btnLink, btnBackground = 'transparent', btnWidth = '100%' }) => {
     return (
-        <button>{text}</button>
+        <button
+            className={styles.button}
+            style={{ backgroundColor: `${btnBackground}`, width: `${btnWidth}` }}
+        >
+            {btnLink
+                ? (
+                    <a href={btnLink}>hello</a>
+                ) : text}
+        </button>
     )
 }
 

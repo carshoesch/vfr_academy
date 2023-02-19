@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-background-dark);
+  color: var(--primary-color-light);
 }
 
 code {
@@ -20,4 +25,8 @@ code {
     --primary-background-light: #fff;
     --primary-color-light: #fff;
     --primary-color-dark: #000;
+    --accent-background-red: red;
+    --primary-border-color: #f3f3f3;
+    --primary-border-radius: 10px;
+    --footer-background-color: #525659;
 }

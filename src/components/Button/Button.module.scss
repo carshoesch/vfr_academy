@@ -1,0 +1,9 @@
+.button {
+    margin-top: 16px;
+    padding: 8px;
+    border: 1px solid var(--primary-border-color);
+    a {
+        color: var(--primary-color-light);
+        text-decoration: none;
+    }
+}

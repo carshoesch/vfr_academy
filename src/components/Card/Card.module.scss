@@ -1,0 +1,35 @@
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    border: 1px solid #f3f3f3;
+    padding: 16px;
+    border-radius: var(--primary-border-radius);
+
+    h2 {
+        margin: 0 0 8px 0;
+        padding: 4px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    .cardSubtitleRed {
+        background: var(--accent-background-red);
+        color: var(--primary-color-light);
+    }
+    .cardSubtitleWhite {
+        background: var(--primary-background-light);
+        color: var(--primary-color-dark);
+    }
+
+    .cardImage {
+        margin-top: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .cardBtn {
+        background-color: transparent;
+    }
+}
