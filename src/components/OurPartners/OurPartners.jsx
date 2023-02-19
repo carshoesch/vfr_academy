@@ -15,11 +15,11 @@ const OurPartners = () => {
             image: dummy1
         },
         {
-            name: 'VfR Döhren',
+            name: 'HRC',
             image: dummy1
         },
         {
-            name: 'Germania List',
+            name: 'St. Pauli',
             image: dummy1
         },
     ]
@@ -29,6 +29,7 @@ const OurPartners = () => {
             <div className={styles.partner}>
                 {partners.map(partner => (
                     <PartnerCard
+                        key={partner.name}
                         partnerLogo={partner.image}
                         partnerName={partner.name}
                     />

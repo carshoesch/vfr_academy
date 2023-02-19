@@ -9,7 +9,7 @@ const Button = ({ text, btnLink, btnBackground = 'transparent', btnWidth = '100%
         >
             {btnLink
                 ? (
-                    <a href={btnLink}>hello</a>
+                    <a href={btnLink}>{text}</a>
                 ) : text}
         </button>
     )
