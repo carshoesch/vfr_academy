@@ -12,7 +12,7 @@ const Nav = () => {
     }
 
     const handleCloseMenu = () => {
-        setOpenMenu(false)
+        openMenu && setOpenMenu(false)
     }
 
     return (
