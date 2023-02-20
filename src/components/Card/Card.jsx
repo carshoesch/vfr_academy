@@ -3,7 +3,7 @@ import Button from '../button/Button'
 
 import styles from './Card.module.scss'
 
-const Card = ({ title, position, descriptionText, image, btnLink }) => {
+const Card = ({ id, title, position, descriptionText, image, cardLink }) => {
     return (
         <div className={styles.cardWrapper}>
             <h2 className={styles.cardSubtitleRed}>{title}</h2>
@@ -13,7 +13,7 @@ const Card = ({ title, position, descriptionText, image, btnLink }) => {
             <Button
                 className={styles.cardBtn}
                 text={'mehr erfahren'}
-                btnLink={btnLink}
+                btnLink={cardLink}
                 btnWidth={'75%'}
             />
         </div>

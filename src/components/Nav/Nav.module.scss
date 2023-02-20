@@ -1,5 +1,6 @@
 .navWrapper {
     position: fixed;
+    top: 0;
     z-index: 1;
     width: 100%;
     height: 75px;
@@ -12,6 +13,14 @@
         background: var(--primary-background-dark);
         height: 100%;
         padding: 0 20px;
+
+        .link {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary-color-light);
+            text-decoration: none;
+        }
 
         .hamburger, .closeMenu {
             width: 2em;

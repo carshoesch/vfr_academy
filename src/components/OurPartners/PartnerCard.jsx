@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './OurPartners.module.scss'
 
-export const PartnerCard = ({ partnerName, partnerLogo }) => {
+const PartnerCard = ({ partnerName, partnerLogo }) => {
     return (
         <div className={styles.partnerWrapper}>
             <img src={partnerLogo} alt="Partner Logo" />
@@ -10,4 +10,4 @@ export const PartnerCard = ({ partnerName, partnerLogo }) => {
     )
 }
 
-// export default PartnerCard
+export default PartnerCard

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.module.scss'
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
             <p>Telefon: 0511-816341</p>
             <p>Email: info@vfr06.de</p>
             <p>
-                <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a>
+                <Link to="/impressum">Impressum</Link> | <Link to="/datenschutz">Datenschutz</Link>
             </p>
             <p>© 2020 | Verein für Rasenspiele von 1906 e. V.</p>
         </footer>

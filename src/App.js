@@ -1,28 +1,26 @@
-import Nav from './components/Nav/Nav';
-import Hero from './components/Hero/Hero';
-import Description from './components/Description/Description';
-import OurActions from './components/OurActions/OurActions';
-import AboutUs from './components/AboutUs/AboutUs';
-import OurPartners from './components/OurPartners/OurPartners';
-import Footer from './components/Footer/Footer';
+import { Routes, Route } from "react-router-dom";
+
+import Nav from './components/nav/Nav';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import Home from './pages/home/Home';
+import Impressum from './pages/impressum/Impressum';
+import Privacy from './pages/privacy/Privacy';
+import Team from './pages/team/Team';
 
 function App() {
     return (
         <div className="App">
             {/* navbar element */}
             <Nav />
-            {/* hero image with content */}
-            <Hero />
-            {/* description text -> more about us(show the Team?) */}
-            <Description />
-            {/* distinct action -> four latest posts? */}
-            <OurActions />
-            {/* about us section -> cta for contact */}
-            <AboutUs />
-            {/* our partners with differnt partners */}
-            <OurPartners />
-            {/* footer */}
-            <Footer />
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/team" element={<Team />} />
+                <Route exact path="/about" element={<About />} />
+                <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/impressum" element={<Impressum />} />
+                <Route exact path="/datenschutz" element={<Privacy />} />
+            </Routes>
         </div>
     );
 }
