@@ -20,7 +20,7 @@ const Nav = () => {
             <nav>
                 {/* TODO: use image instead of text */}
                 <div className={styles.logo}>
-                    <Link className={styles.link} to='/'>
+                    <Link className={styles.link} to='/' onClick={handleCloseMenu}>
                         Rugby Academy Hannover
                     </Link>
                 </div>
