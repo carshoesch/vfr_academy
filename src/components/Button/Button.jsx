@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Button.module.scss'
 
 const Button = ({ text, btnLink, btnBackground = 'transparent', btnWidth = '100%' }) => {
@@ -9,7 +10,7 @@ const Button = ({ text, btnLink, btnBackground = 'transparent', btnWidth = '100%
         >
             {btnLink
                 ? (
-                    <a href={btnLink}>{text}</a>
+                    <Link to={btnLink}>{text}</Link>
                 ) : text}
         </button>
     )

@@ -6,6 +6,15 @@
     padding: 16px;
     border-radius: var(--primary-border-radius);
 
+    .cardTextImage {
+        display: flex;
+        flex-direction: column;
+
+        .cardText, .cardImage {
+            flex: 1;
+        }
+    }
+
     h2 {
         margin: 0 0 8px 0;
         padding: 4px;
