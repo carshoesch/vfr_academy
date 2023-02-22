@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../Button/Button'
 
+import Button from '../Button/Button'
 import styles from './Card.module.scss'
 
 const Card = ({ id, title, position, descriptionText, image, cardLink }) => {
