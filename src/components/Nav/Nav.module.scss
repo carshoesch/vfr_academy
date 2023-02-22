@@ -69,8 +69,18 @@
 
 // media
 @include media-breakpoint-up(md) {
-    .hamburger {
-        display: none;
+    .navWrapper {
+        nav {
+            .link {
+                img {
+                    height: 70px;
+                    aspect-ratio: 1/1;
+                }
+            }
+            .hamburger {
+                display: none;
+            }
+        }
     }
 }
 @include media-breakpoint-down(md) {
