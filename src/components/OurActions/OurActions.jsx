@@ -2,8 +2,6 @@ import Card from '../Card/Card'
 import data from '../../data'
 import styles from './OurActions.module.scss'
 
-import _uniqueId from 'lodash/uniqueId';
-
 const OurActions = () => {
     let slicedCardData = []
     const maxCardsToShow = 4
