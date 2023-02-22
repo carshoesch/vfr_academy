@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Nav from './components/nav/Nav';
 import About from './pages/about/About';
@@ -10,6 +11,13 @@ import Privacy from './pages/privacy/Privacy';
 import Team from './pages/team/Team';
 
 function App() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+    }, [pathname]);
+
     return (
         <div className="App">
             {/* navbar element */}
