@@ -1,11 +1,10 @@
 import React from 'react'
-import { useLocation, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import styles from '../DesktopLinks/DesktopLinks.module.scss'
 
 
 const DesktopLinks = () => {
-    const location = useLocation()
     const handleActiveLink = () => {
         // console.log('location', location);
         // switch (location) {
