@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Nav from './components/nav/Nav';
+import Nav from './components/Nav/Nav';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Detail from './pages/detail/Detail';
