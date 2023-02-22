@@ -4,6 +4,7 @@ import { FiMenu, FiX } from 'react-icons/fi'
 
 import Links from './Links'
 import styles from './Nav.module.scss'
+import logo from '../../assets/img/RAH_Logo_final.svg'
 
 const Nav = () => {
     const [openMenu, setOpenMenu] = useState(false)
@@ -21,7 +22,7 @@ const Nav = () => {
                 {/* TODO: use image instead of text */}
                 <div className={styles.logo}>
                     <Link className={styles.link} to='/' onClick={handleCloseMenu}>
-                        Rugby Academy Hannover
+                        <img src={logo} alt="Academy Logo" />
                     </Link>
                 </div>
                 {!openMenu && (<FiMenu className={styles.hamburger} onClick={handleOpenMenu} />)}

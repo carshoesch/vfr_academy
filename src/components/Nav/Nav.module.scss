@@ -20,6 +20,11 @@
             font-weight: bold;
             color: var(--primary-color-light);
             text-decoration: none;
+
+            img {
+                height: 60px;
+                aspect-ratio: 1/1;
+            }
         }
 
         .hamburger, .closeMenu {
