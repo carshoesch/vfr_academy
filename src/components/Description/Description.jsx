@@ -15,7 +15,9 @@ const Description = () => {
                 Impulse auf die Rugby-Plätze Deutschlands zu bringen.</p>
             <Button
                 text={'mehr über uns'}
-                btnWidth={'50%'}
+                btnWidth={'25%'}
+                btnMinWidth={'150px'}
+                btnMaxWidth={'300px'}
             />
         </div>
     )

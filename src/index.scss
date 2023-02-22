@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/bootstrap-grid.scss"; 
 html {
     overflow-x: hidden;
 }
@@ -11,8 +12,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-background-dark);
-  color: var(--primary-color-light);
+  background-color: var(--primary-background-dark) !important;
+  color: var(--primary-color-light) !important;
 }
 
 code {
@@ -25,8 +26,10 @@ code {
     --primary-background-light: #fff;
     --primary-color-light: #fff;
     --primary-color-dark: #000;
-    --accent-background-red: red;
+    --accent-background-red: #fc3031;
     --primary-border-color: #f3f3f3;
     --primary-border-radius: 10px;
     --footer-background-color: #525659;
 }
+
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px );

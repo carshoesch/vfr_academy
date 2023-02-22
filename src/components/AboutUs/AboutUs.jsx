@@ -28,7 +28,9 @@ const AboutUs = () => {
             <Button
                 text={'Kontakt aufnehmen'}
                 btnLink={'https://www.google.de'}
-                btnWidth={'75%'}
+                btnWidth={'25%'}
+                btnMinWidth={'150px'}
+                btnMaxWidth={'300px'}
             />
         </div>
     )
