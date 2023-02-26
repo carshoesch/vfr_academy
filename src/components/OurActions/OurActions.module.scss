@@ -23,7 +23,10 @@
 }
 
 @include media-breakpoint-up(md) {
-    .ourActionsWrapper {        
+    .ourActionsWrapper {    
+        .actionHeadline {
+            font-size: var(--headline-desktop-fs);
+        }    
         .cardsWrapper {
             .cards {
                 &.cardsMobile {

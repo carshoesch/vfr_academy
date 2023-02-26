@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap-grid.scss"; 
+
 .aboutUsWrapper {
     text-align: center;
     padding: 64px 20px 32px 20px;
@@ -9,5 +11,18 @@
     .aboutUsParagraphs {
         padding: 0 20px;
         text-align: left;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .aboutUsWrapper {
+        .aboutUsHeadline {
+            font-size: var(--headline-desktop-fs);
+        }
+        .aboutUsParagraphs {
+            p {
+                font-size: var(--paragraph-desktop-fs);
+            }
+        }
     }
 }

@@ -7,7 +7,7 @@ import styles from '../Contact/Contact.module.scss'
 const Contact = () => {
     return (
         <div className={styles.contactWrapper} id='contact'>
-            <h3>Kontaktformular</h3>
+            <h3 className={styles.contactHeadline}>Kontaktformular</h3>
             <Form>
                 <div className={styles.contactEmailClub}>
                     <Form.Group className={styles.email} controlId="formBasicEmail">
@@ -35,7 +35,6 @@ const Contact = () => {
                     btnWidth={'fit-content'}
                     btnMinWidth={'150px'}
                     btnMaxWidth={'300px'}
-                    textColor={'#fff'}
                 />
             </Form>
         </div>

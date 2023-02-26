@@ -33,5 +33,17 @@
 @include media-breakpoint-up(md) {
     .contactWrapper {
         max-width: 80%;
+
+        .contactHeadline {
+            font-size: var(--headline-desktop-fs);
+        }
+
+        .contactEmailClub, .nameWrapper {
+            .email, .club, .firstName, .lastName {
+                input {
+                    padding: 16px;
+                }
+            }
+        }
     }
 }

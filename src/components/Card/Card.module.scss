@@ -44,5 +44,12 @@
 @include media-breakpoint-up(md) {
     .cardWrapper {
         max-width: 350px;
+
+        .cardText {
+            .cardDescription {
+                font-size: var(--paragraph-desktop-fs);
+                margin-bottom: 64px;
+            }
+        }
     }
 }

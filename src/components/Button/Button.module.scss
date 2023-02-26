@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap-grid.scss"; 
+
 .button {
     margin-top: 16px;
     padding: 8px;
@@ -10,5 +12,14 @@
     a {
         color: var(--primary-color-light);
         text-decoration: none;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .button {
+        font-size: var(--paragraph-desktop-fs);
+        a {
+            font-size: var(--paragraph-desktop-fs);
+        }
     }
 }

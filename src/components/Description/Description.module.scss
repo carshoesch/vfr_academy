@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap-grid.scss"; 
+
 .descriptionWrapper {
     display: flex;
     flex-direction: column;
@@ -16,5 +18,16 @@
         width: 150px;
         padding: 8px;
         border: 1px solid var(--primary-border-color);
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .descriptionWrapper {
+        .descriptionHeadline {
+            font-size: var(--headline-desktop-fs);
+        }
+        .descriptionParagraph {
+            font-size: var(--paragraph-desktop-fs);
+        }
     }
 }
