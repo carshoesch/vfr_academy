@@ -1,5 +1,126 @@
+@import "~bootstrap/scss/bootstrap-grid.scss"; 
+
 .detailWrapper {
     margin-top: 75px;
     padding: 0 20px 20px 20px;
     overflow-x: hidden;
+    line-height: 1.8;
+
+    .detailHero {
+        position: relative;
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        .detailHeroImage {
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+
+        .subtitles {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            width: 50%;
+            
+            .heroSubtitleRed, .heroSubtitleWhite {
+                padding: 4px;
+                margin: 0;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            .heroSubtitleRed {
+                background: var(--accent-background-red);
+                color: var(--primary-color-light);
+            }
+            .heroSubtitleWhite {
+                background: var(--primary-background-light);
+                color: var(--primary-color-dark);
+            }
+        }
+    }
+
+    .detailHeadlineDescription {
+        margin-top: 32px;
+        .detailDescription {
+            margin-top: 16px;
+            text-align: left;
+        }
+    }
+
+    .detailExpertBio {
+        margin: 32px 0;
+
+        .expertCloseup {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+    
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                margin: 16px 0;
+            }
+            p {
+                text-align: left;
+            }
+        }
+    }
+
+    .tableHeadline {
+        margin-bottom: 16px;
+    }
+    .tableContent {
+        text-align: left;
+
+        .right {
+            margin-top: 48px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .detailWrapper {
+        .detailHero {
+            background-position: top center;
+        }
+        .detailHeadline, .tableHeadline, .expertHeadline {
+            font-size: var(--headline-desktop-fs);
+            margin: 48px 0 32px 0;
+        }
+        .detailDescription, .tableDescription, .expertDescription {
+            font-size: var(--paragraph-desktop-fs);
+        }
+
+
+        .detailExpertBio {
+            // pump it up?
+            margin: 32px 0;
+    
+            .expertCloseup {
+                flex-direction: row;
+                img {
+                    width: 50%;
+                    margin: 0;
+                }
+            }
+        }
+        .tableModules {
+            display: flex;
+            text-align: center;
+            width: 100%;
+    
+            .left, .right {
+                width: 50%;
+            }
+            .right {
+                margin-top: 0;
+            }
+        }
+    }
 }

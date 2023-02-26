@@ -7,7 +7,7 @@ import styles from '../Contact/Contact.module.scss'
 const Contact = () => {
     return (
         <div className={styles.contactWrapper} id='contact'>
-            <h3 className={styles.contactHeadline}>Kontaktformular</h3>
+            <h3 className={styles.contactHeadline}>Kontakt</h3>
             <Form>
                 <div className={styles.contactEmailClub}>
                     <Form.Group className={styles.email} controlId="formBasicEmail">
