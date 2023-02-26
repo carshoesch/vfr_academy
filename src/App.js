@@ -11,6 +11,8 @@ import Home from './pages/home/Home';
 import Impressum from './pages/impressum/Impressum';
 import Privacy from './pages/privacy/Privacy';
 import Team from './pages/team/Team';
+import Footer from './components/Footer/Footer';
+import OurPartners from './components/OurPartners/OurPartners';
 
 function App() {
     const { pathname } = useLocation();
@@ -33,6 +35,8 @@ function App() {
                 <Route exact path="/datenschutz" element={<Privacy />} />
                 <Route exact path="/classes/:classId" element={<Detail />} />
             </Routes>
+            <OurPartners />
+            <Footer />
         </div>
     );
 }
