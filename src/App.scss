@@ -39,3 +39,11 @@
     transform: rotate(360deg);
   }
 }
+
+@include media-breakpoint-up(md) {
+    .App {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

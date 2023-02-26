@@ -3,21 +3,41 @@ import data from '../../data'
 import styles from './OurActions.module.scss'
 
 const OurActions = () => {
-    let slicedCardData = []
-    const maxCardsToShow = 4
+    // todo: order cards by creation date desc and then four from it
+    let slicedCardDataM = []
+    let slicedCardDataD = []
+    const maxCardsToShowMobile = 4
+    const maxCardsToShowDesktop = 3
 
-    const sliceCardData = () => {
-        slicedCardData = data.slice(0, maxCardsToShow)
+    const sliceCardDataMobile = () => {
+        slicedCardDataM = data.slice(0, maxCardsToShowMobile)
+    }
+    const sliceCardDataDesktop = () => {
+        slicedCardDataD = data.slice(0, maxCardsToShowDesktop)
     }
 
-    sliceCardData()
+    sliceCardDataMobile()
+    sliceCardDataDesktop()
 
     return (
-        <div>
+        <div className={styles.ourActionsWrapper}>
             <h4 className={styles.actionHeadline}>Unsere Maßnahmen</h4>
             <div className={styles.cardsWrapper}>
-                <div className={styles.cards}>
-                    {slicedCardData.map(data => (
+                <div className={[styles.cards, styles.cardsMobile].join(' ')}>
+                    {slicedCardDataM.map(data => (
+                        <Card
+                            key={data.id}
+                            id={data.id}
+                            title={data.title}
+                            position={data.position}
+                            descriptionText={data.description}
+                            image={data.image}
+                            cardLink={`/classes/${data.positionRaw}+${data.creationDate}`}
+                        />
+                    ))}
+                </div>
+                <div className={[styles.cards, styles.cardsDesktop].join(' ')}>
+                    {slicedCardDataD.map(data => (
                         <Card
                             key={data.id}
                             id={data.id}

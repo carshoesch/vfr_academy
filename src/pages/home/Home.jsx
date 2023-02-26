@@ -5,6 +5,7 @@ import OurActions from '../../components/OurActions/OurActions';
 import AboutUs from '../../components/AboutUs/AboutUs';
 import OurPartners from '../../components/OurPartners/OurPartners';
 import Footer from '../../components/Footer/Footer';
+import Contact from '../../components/Contact/Contact';
 
 const Home = () => {
     return (
@@ -19,6 +20,8 @@ const Home = () => {
             <AboutUs />
             {/* our partners with differnt partners */}
             <OurPartners />
+            {/* contact form */}
+            <Contact />
             {/* footer */}
             <Footer />
         </div>

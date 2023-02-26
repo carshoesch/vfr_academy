@@ -5,7 +5,6 @@ import { FiMenu, FiX } from 'react-icons/fi'
 import Links from './Links'
 import styles from './Nav.module.scss'
 import logo from '../../assets/img/RAH_Logo_final.svg'
-import DesktopLinks from './DesktopLinks/DesktopLinks'
 
 const Nav = () => {
     const [openMenu, setOpenMenu] = useState(false)
@@ -26,14 +25,9 @@ const Nav = () => {
                         <img src={logo} alt="Academy Logo" />
                     </NavLink>
                 </div>
-                <div className={styles.mobileMenu}>
-                    {!openMenu && (<FiMenu className={styles.hamburger} onClick={handleOpenMenu} />)}
-                    {openMenu && (<FiX className={styles.closeMenu} onClick={handleOpenMenu} />)}
-                    {openMenu && <Links handleCloseMenu={handleCloseMenu} />}
-                </div>
-                <div className={styles.desktopMenu}>
-                    <DesktopLinks />
-                </div>
+                {!openMenu && (<FiMenu className={styles.hamburger} onClick={handleOpenMenu} />)}
+                {openMenu && (<FiX className={styles.closeMenu} onClick={handleOpenMenu} />)}
+                {openMenu && <Links handleCloseMenu={handleCloseMenu} />}
             </nav>
         </div>
     )

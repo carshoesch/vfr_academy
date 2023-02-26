@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap-grid.scss"; 
+
 .heroWrapper {
     position: relative;
     height: 50vh;
@@ -9,6 +11,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     padding: 75px 16px 16px 16px;
+
+    &.heroDesktop {
+        display: none;
+    }
 
     .heroTitle {
         color: var(--primary-color-light);
@@ -25,6 +31,7 @@
             padding: 4px;
             margin: 0;
             font-weight: 700;
+            font-size: 2.5rem;
         }
         
         .heroSubtitleRed {
@@ -34,6 +41,41 @@
         .heroSubtitleWhite {
             background: var(--primary-background-light);
             color: var(--primary-color-dark);
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .heroWrapper {
+        background:none;
+
+        &.heroMobile {
+            display: none;
+        }
+        &.heroDesktop {
+            display: flex;
+
+            .heroLeft {
+                width: 50%;
+            }
+            .heroRight {
+                width: 50%;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.3), 
+                    rgba(0, 0, 0, 0.7)
+                ), url('../../assets/img/rugby_academy_hero_dummy2.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        .heroTitle {
+            font-size: 3rem;
+        }
+        .heroSubtitles {
+            .heroSubtitleRed, .heroSubtitleWhite, .profit {
+                max-width: 60%;
+            }
         }
     }
 }

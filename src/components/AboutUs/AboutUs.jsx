@@ -4,7 +4,7 @@ import styles from './AboutUs.module.scss'
 
 const AboutUs = () => {
     return (
-        <div className={styles.aboutUsWrapper}>
+        <div className={styles.aboutUsWrapper} id='aboutUs'>
             <h4 className={styles.aboutUsHeadline}>
                 Über Uns
             </h4>
@@ -27,8 +27,8 @@ const AboutUs = () => {
             </div>
             <Button
                 text={'Kontakt aufnehmen'}
-                btnLink={'https://www.google.de'}
-                btnWidth={'25%'}
+                btnLink={'#contact'}
+                btnWidth={'fit-content'}
                 btnMinWidth={'150px'}
                 btnMaxWidth={'300px'}
             />

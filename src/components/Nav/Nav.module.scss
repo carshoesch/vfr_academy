@@ -70,6 +70,7 @@
 // media
 @include media-breakpoint-up(md) {
     .navWrapper {
+        max-width: 1440px;
         nav {
             .link {
                 img {
@@ -77,14 +78,25 @@
                     aspect-ratio: 1/1;
                 }
             }
-            .hamburger {
-                display: none;
+            .hamburger, .closeMenu {
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+            .navLinks {
+                .navLink {
+                    font-size: 2rem;
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid transparent;
+
+                    &.active {
+                        border-bottom: 2px solid var(--accent-background-red);
+                    }
+                    &:hover {
+                        border-bottom: 2px solid red;
+                    }
+
+                }
             }
         }
-    }
-}
-@include media-breakpoint-down(md) {
-    .desktopMenu {
-        display: none;
     }
 }

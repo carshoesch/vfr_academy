@@ -1,14 +1,40 @@
-.actionHeadline {
-    text-align: center;
+@import "~bootstrap/scss/bootstrap-grid.scss"; 
+
+.ourActionsWrapper {
+    padding: 32px 20px 64px 20px;
+    .actionHeadline {
+        text-align: center;
+    }
+    
+    .cardsWrapper {
+        padding: 20px;
+        
+        .cards {
+            display: flex;
+            gap: 16px;
+            overflow-x: scroll;
+            width: 100%;
+
+            &.cardsDesktop {
+                display: none;
+            }
+        }
+    }
 }
 
-.cardsWrapper {
-    padding: 20px;
-    
-    .cards {
-        display: flex;
-        gap: 16px;
-        overflow-x: scroll;
-        width: 100%;
+@include media-breakpoint-up(md) {
+    .ourActionsWrapper {        
+        .cardsWrapper {
+            .cards {
+                &.cardsMobile {
+                    display: none;
+                }
+                &.cardsDesktop {
+                    display: flex;
+                    justify-content: space-evenly;
+                    overflow-x: hidden;
+                }
+            }
+        }
     }
 }

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import './App.scss'
 import Nav from './components/Nav/Nav';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';

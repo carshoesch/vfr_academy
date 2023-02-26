@@ -16,7 +16,7 @@ const Card = ({ id, title, position, descriptionText, image, cardLink }) => {
                 className={styles.cardBtn}
                 text={'mehr erfahren'}
                 btnLink={cardLink}
-                btnWidth={'75%'}
+                btnWidth={'50%'}
             />
         </div>
     )
