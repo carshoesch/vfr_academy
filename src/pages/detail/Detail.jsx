@@ -5,8 +5,6 @@ import styles from './Detail.module.scss'
 import data from '../../data'
 import Button from '../../components/Button/Button'
 import Contact from '../../components/Contact/Contact'
-import OurPartners from '../../components/OurPartners/OurPartners'
-import Footer from '../../components/Footer/Footer'
 
 const Detail = () => {
     // gets me my url parameter which is related to the specific detailpage
