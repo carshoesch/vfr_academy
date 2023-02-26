@@ -24,8 +24,8 @@ const cardData = [
             module5: 'Praxis Gasse'
         },
         when: 'XX.XX.2023 von 10 - 18 Uhr',
-        where: 'VFR 06 Döhren, <br/>Gustav Brandt Str. 83 <br/>Hannover',
-        costs: '59,00 Euro <br/>inkl. Mittagsessen und Getränke'
+        where: 'VFR 06 Döhren, Gustav Brandt Str. 83 Hannover',
+        costs: '59,00 Euro inkl. Mittagsessen und Getränke'
     },
     {
         id: 1,
