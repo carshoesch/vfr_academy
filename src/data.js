@@ -10,7 +10,22 @@ const cardData = [
         positionRaw: 'front_row',
         description: 'mit Michel Poppmaier, Headcoach Frankfur 1880 und ehemaliger deutscher Nationalspieler',
         image: dummy1,
-        // todo: need to redirect to a certain page based on the id of the object 
+        detailHeadline: 'Lerne worauf es in der ersten Reihe ankommt!',
+        detailDescription: 'in dem eintages Workshop mit Sturm-Experte Michael Popp-maier hast du die Chance zu lernen was du in deinem Training brauchst. Im fünf Modulen werden dir Inhalt zu Krafttraining, Therorie am Gedränge und in der Gasse soweie die Praktische umsetzung vermittelt.',
+        expertHeadline: 'Der Experte',
+        expertDescription: 'Michel Poppmaier ist Headcoach Frankfur 1880 und ehemaliger deutscher Nationalspieler in der ersten und zweiten Sturmreihe. Er ist als Spieler und Trainer mehrfach Deutscher-Meister geworden und bring seine internationale Expertiese mit.',
+        tableHeadline: 'Masterclass auf einem Blick',
+        modules: {
+            module1: 'Krafttraining für 1. Reihe-Spieler',
+            module2: 'Theorie Gedränge',
+            module3: 'Praxis Gedränge',
+            break: 'Mittagspause',
+            module4: 'Theorie Gasse',
+            module5: 'Praxis Gasse'
+        },
+        when: 'XX.XX.2023 von 10 - 18 Uhr',
+        where: 'VFR 06 Döhren, <br/>Gustav Brandt Str. 83 <br/>Hannover',
+        costs: '59,00 Euro <br/>inkl. Mittagsessen und Getränke'
     },
     {
         id: 1,
@@ -20,7 +35,17 @@ const cardData = [
         positionRaw: 'centre',
         description: 'mit Brian Habana, ehemaliger südafrikanischer Nationalspiler und Weltmeister von 2007',
         image: dummy2,
-        cardLink: 'https://www.google.de'
+        modules: {
+            module1: 'Krafttraining für 1. Reihe-Spieler',
+            module2: 'Theorie Gedränge',
+            module3: 'Praxis Gedränge',
+            break: 'Mittagspause',
+            module4: 'Theorie Gasse',
+            module5: 'Praxis Gasse'
+        },
+        when: 'XX.XX.2023 von 10 - 18 Uhr',
+        where: 'VFR 06 Döhren, <br/>Gustav Brandt Str. 83 <br/>Hannover',
+        costs: '59,00 Euro <br/>inkl. Mittagsessen und Getränke'
     },
     {
         id: 2,
@@ -30,7 +55,17 @@ const cardData = [
         positionRaw: 'second_row',
         description: 'mit Brian Habana, ehemaliger südafrikanischer Nationalspiler und Weltmeister von 2007',
         image: dummy2,
-        cardLink: 'https://www.google.de'
+        modules: {
+            module1: 'Krafttraining für 1. Reihe-Spieler',
+            module2: 'Theorie Gedränge',
+            module3: 'Praxis Gedränge',
+            break: 'Mittagspause',
+            module4: 'Theorie Gasse',
+            module5: 'Praxis Gasse'
+        },
+        when: 'XX.XX.2023 von 10 - 18 Uhr',
+        where: 'VFR 06 Döhren, <br/>Gustav Brandt Str. 83 <br/>Hannover',
+        costs: '59,00 Euro <br/>inkl. Mittagsessen und Getränke'
     },
     {
         id: 3,
@@ -40,7 +75,17 @@ const cardData = [
         positionRaw: 'flanker_nr8',
         description: 'mit Brian Habana, ehemaliger südafrikanischer Nationalspiler und Weltmeister von 2007',
         image: dummy2,
-        cardLink: 'https://www.google.de'
+        modules: {
+            module1: 'Krafttraining für 1. Reihe-Spieler',
+            module2: 'Theorie Gedränge',
+            module3: 'Praxis Gedränge',
+            break: 'Mittagspause',
+            module4: 'Theorie Gasse',
+            module5: 'Praxis Gasse'
+        },
+        when: 'XX.XX.2023 von 10 - 18 Uhr',
+        where: 'VFR 06 Döhren, <br/>Gustav Brandt Str. 83 <br/>Hannover',
+        costs: '59,00 Euro <br/>inkl. Mittagsessen und Getränke'
     },
     {
         id: 4,
@@ -50,7 +95,17 @@ const cardData = [
         positionRaw: 'scrumhalf',
         description: 'mit Brian Habana, ehemaliger südafrikanischer Nationalspiler und Weltmeister von 2007',
         image: dummy2,
-        cardLink: 'https://www.google.de'
+        modules: {
+            module1: 'Krafttraining für 1. Reihe-Spieler',
+            module2: 'Theorie Gedränge',
+            module3: 'Praxis Gedränge',
+            break: 'Mittagspause',
+            module4: 'Theorie Gasse',
+            module5: 'Praxis Gasse'
+        },
+        when: 'XX.XX.2023 von 10 - 18 Uhr',
+        where: 'VFR 06 Döhren, <br/>Gustav Brandt Str. 83 <br/>Hannover',
+        costs: '59,00 Euro <br/>inkl. Mittagsessen und Getränke'
     },
 ]
 
